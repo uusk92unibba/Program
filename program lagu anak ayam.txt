@@ -2,6 +2,7 @@ program LaguAnakAyam;
 var
 a:integer = 10;
 begin
+writeln('Tek kotek Kotek Anak Ayam Turun Berkotek  ');
 repeat
 writeln('Anak Ayam Turun ',a);
 a:=a-1;
