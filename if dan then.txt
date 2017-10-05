@@ -1,0 +1,24 @@
+
+program struktur_if_then;
+
+uses crt;
+
+var
+
+angka:integer;
+
+begin
+
+clrscr;
+
+angka := 10;
+
+  if (angka > 5) then
+ 
+ begin
+   writeln('Variabel "angka" lebih besar dari 5');
+ end;
+
+  writeln('Angka angka Variabel ala uus');
+ readln;
+end.

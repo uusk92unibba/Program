@@ -1,0 +1,38 @@
+
+uses wincrt;
+
+var
+
+ a: integer;
+ b: integer;
+ c: integer;
+
+begin
+
+writeln ('Nama : Uus Kusnadi');
+
+writeln ('Fakultas : FTI');
+
+writeln ('Prodi : SI');
+
+writeLn ('Tugas : Bab 2');
+
+writeln ('Program : "Nukerkeun a ka b sareng b ka a "');
+
+writeln;
+
+write('ngasupkeun nilei a = ');readln (a);
+
+write('ngasupkeun nilei b = ');readln (b);
+
+c := a ;
+
+a := b ;
+
+b := c ;
+
+write('jadi nilei a = ', +a ,' sareng nilei b = ', +b);
+
+readln;
+
+end.
