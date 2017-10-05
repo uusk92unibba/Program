@@ -1,0 +1,38 @@
+(* Nama Program : no2.pas *)
+(* Nama         :  Uus Kusnadi*)
+(* Deskripsi    : menentukan tunjangan,iuran,dan gajih bersih dari golongan dan status*)
+(* --------------------------------------------------- *)
+Uses wincrt;
+var
+gajipokok,tunjangan,iuran,persentase,gaji_bersih:real;
+nama,status : string;
+golongan : char;
+begin
+   write('Nama           : ');readln(nama);
+   write('Golongan       : ');readln(golongan);
+   write('Status         : ');readln(status);
+  if golongan='A' then
+  begin
+ gajipokok:=2500000;
+ end
+ else gajipokok:=3550000;
+                       if (status='Kawin') and (golongan='A') then
+                       tunjangan:=550000;
+                       if (status='Kawj') and (golongan='B') then
+                       tunjangan:=755000;
+                       if (status='Belum Kawin') and (golongan='A') then
+                       tunjangan:=255000;
+                       if (status='Belum Kawin') and (golongan='B') then
+                       tunjangan:=650000;
+ if gajipokok <= 3500000 then
+ persentase:=0.05;
+ if gajipokok >3500000 then
+ persentase:=0.1;
+ iuran:=(gajipokok+tunjangan)*persentase;
+ gaji_bersih:=gajipokok+tunjangan-iuran;
+
+ writeln('Tunjangan      : Rp.',tunjangan:2:0);
+ writeln('Potongan iuran : Rp.',iuran:2:0);
+ writeln('Gaji Bersih    : Rp.',gaji_bersih:2:0);
+readln;
+end.

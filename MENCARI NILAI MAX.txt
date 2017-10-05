@@ -1,0 +1,30 @@
+(* Nama Program : NilaiMax*)
+(* Nama         : Uus Kusnadi *)
+(* Deskripsi    : menentukan nilai paling besar dari angka yang dimasukan*)
+(* --------------------------------------------------- *)
+uses crt;
+TUGAS MENCARI NILAI MAX
+var
+   a:Integer;
+   b:Integer;
+   c:Integer;
+begin
+   write('Masukan Nilai A : ');readln(a);
+   write('Masukan Nilai B : ');readln(b);
+   write('Masukan Nilai C : ');readln(c);
+   if (a>b) and (a>c) then
+      begin
+      writeln('Nilai Paling besar A');
+      end
+   else
+   if (b>a) and (b>c) then
+      begin
+      writeln('Nilai Paling Besar B');
+      end
+   else
+
+      writeln('Nilai Paling Besar C');
+
+
+readln;
+end.
