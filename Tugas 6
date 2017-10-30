@@ -1,0 +1,102 @@
+uses crt;
+var
+x,y,z,pilih,N : integer;
+d : char;
+begin
+writeln('Nama. : Uus kusnadi');
+writeln('Prodi : Sistem Informasi');
+writeln('Tugas : Menu Bintang Segitiga');
+writeln('Waktu : Rabu 2017,10,23');
+writeln('Dosen : Pa Cecep');
+writeln();
+writeln();
+writeln('========================================');
+writeln('========================================');
+repeat
+ writeln('=================MENU===================');
+ writeln('1.Segitiga Bintang Rata Kanan');
+ writeln('2.Segitiga Bintang Rata Kiri');
+ writeln('3.Segitiga Bintang Rata Tengah');
+ writeln('4.Segitiga Pascal');
+ writeln('0.Keluar Program');
+ write('Pilih nomor : ');readln(pilih);
+  case pilih of
+  1 : begin
+   repeat
+    write('Masukkan jumlah bintangnya = ');readln(z);
+    if z>=3 then
+    for x:=1 to z do
+    begin
+    for y:=1 to z-x do
+    begin
+    write (' ');
+    end;
+    for y:=x downto 1 do
+    begin
+    write('*');
+    end;
+    writeln();
+    end;
+    write('Kembali ke menu Y/N : ');readln(d);
+   until (d='Y')
+      end;
+  2 : begin
+   repeat
+    write('Masukkan jumlah bintangnya = ');readln(z);
+    if z>=3 then
+    for x:=1 to z do
+    begin
+    for y:=1 to x do
+    write('*');
+    writeln();
+    end;
+    write('Kembali ke menu Y/N : ');readln(d);
+   until(d='Y')
+      end;
+  3 : begin
+   repeat
+    write('Masukkan jumlah bintangnya = ');readln(z);
+    if z>=3 then
+    for x:=1 to z do
+    begin
+    for y:=1 to z-x do
+    begin
+    write (' ');
+    end;
+    for y:=x downto 1 do
+    begin
+    write('* ');
+    end;
+    writeln;
+       end;
+    write('Kembali ke menu Y/N : ');readln(d);
+   until (d= 'Y')
+    end;
+  4 : begin
+   repeat
+    write('Masukkan jumlah bintangnya = ');readln(z);
+    if z>=3 then
+    for x:=1 to z do
+    begin
+    for y:=1 to z-x do
+    begin
+    write (' ');
+    end;
+    for y:=x downto 1 do
+    begin
+    write(y,'');
+    end;
+    writeln;
+    end;
+    write('kembali  ke menu Y/N : ');readln(d);
+   until (d='Y');
+    end;
+    else
+    writeln();
+    writeln();
+    writeln('Exit dari Program');
+    writeln(' Sayonara ');
+    end;
+ until(pilih=0);
+ readkey;
+ end.
